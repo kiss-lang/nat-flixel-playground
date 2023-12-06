@@ -1,8 +1,8 @@
-# @install: lix --silent download "gh://github.com/kiss-lang/nat-archive-tool#70c9be12cfa3323d5e1ab12dc5263222cfc18709" into nat-archive-tool/0.0.0/github/70c9be12cfa3323d5e1ab12dc5263222cfc18709
-# @run: haxelib run-dir nat-archive-tool "${HAXE_LIBCACHE}/nat-archive-tool/0.0.0/github/70c9be12cfa3323d5e1ab12dc5263222cfc18709"
+# @install: lix --silent download "gh://github.com/kiss-lang/nat-archive-tool#fcfa9b9de24a36020b78a92132f12741522d3e33" into nat-archive-tool/0.0.0/github/fcfa9b9de24a36020b78a92132f12741522d3e33
+# @run: haxelib run-dir nat-archive-tool "${HAXE_LIBCACHE}/nat-archive-tool/0.0.0/github/fcfa9b9de24a36020b78a92132f12741522d3e33"
 -lib kiss
 -lib kiss-tools
 -lib tink_json
 -lib uuid
--cp ${HAXE_LIBCACHE}/nat-archive-tool/0.0.0/github/70c9be12cfa3323d5e1ab12dc5263222cfc18709/src/
+-cp ${HAXE_LIBCACHE}/nat-archive-tool/0.0.0/github/fcfa9b9de24a36020b78a92132f12741522d3e33/src/
 -D nat-archive-tool=0.0.0
