@@ -228,7 +228,7 @@
     (clearUI)
     (displayMessage prompt)
     (doFor choice choices
-        (uiWindow.makeText choice null ->_ {(clearUI)(resolve choice)}))
+        (uiWindow.makeText choice null ->_ {(clearUI)(resolve choice)} null null true))
     (uiWindow.show))
 
 (method :Option<Position> cursorPosition []
