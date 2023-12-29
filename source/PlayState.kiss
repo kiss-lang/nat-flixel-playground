@@ -123,11 +123,11 @@
 (prop &mut :Archive archive)
 
 (prop &mut :FlxText textInputLabel null)
-(prop &mut :FlxInputText textInput null)
+(prop &mut :KissInputText textInput null)
 
 (method :Void enterText [prompt resolve maxLength]
     (displayMessage prompt)
-    (set textInput (new FlxInputText 0 0 FlxG.width "" TEXT_SIZE))
+    (set textInput (new KissInputText 0 0 FlxG.width "" TEXT_SIZE))
     (set textInput.hasFocus true)
     (set textInput.callback
         ->:Void [text action]

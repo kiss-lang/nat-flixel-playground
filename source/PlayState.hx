@@ -23,6 +23,7 @@ using kiss_flixel.CameraTools;
 using kiss_flixel.SimpleWindow;
 import kiss_tools.KeyShortcutHandler;
 import kiss_flixel.FlxKeyShortcutHandler;
+import kiss_flixel.KissInputText;
 import nat.systems.PlaygroundSystem;
 import flash.desktop.Clipboard;
 import flash.desktop.ClipboardFormats;
