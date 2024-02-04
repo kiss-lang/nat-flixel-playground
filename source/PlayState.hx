@@ -29,6 +29,8 @@ import flash.desktop.Clipboard;
 import flash.desktop.ClipboardFormats;
 import haxe.ds.Option;
 import nat.components.Position;
+import openfl.filters.BitmapFilter;
+import openfl.filters.ShaderFilter;
 
 @:build(kiss.Kiss.build())
 class PlayState extends FlxState implements ArchiveUI {}
