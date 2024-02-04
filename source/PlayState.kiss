@@ -98,10 +98,10 @@
                     (Some pos) (cursorPosition)]
                 (set resolvePosition null)
                 (rp pos))))
-    
+
     // Control the UI camera with WASD, and the playground camera with arrow keys:
     (var KEYBOARD_SCROLL_SPEED 800)
-    
+
     (FlxG.camera.updateKeyControl
         elapsed
         KEYBOARD_SCROLL_SPEED
@@ -151,9 +151,9 @@
                     //([_ FlxInputText.])
                     (otherwise {}))))
     (uiWindow.addControl textInput))
-    
+
 (method :Void enterNumber [prompt resolve min max &opt inStepsOf allowNaN]
-    (enterText prompt 
+    (enterText prompt
         ->:Void [numberStr]
             (let [number (Std.parseFloat numberStr)]
                 (when (and !allowNaN (Math.isNaN number))
@@ -203,7 +203,7 @@
                 (spriteSystem.onRemoveEntry archive e)
                 (spriteSystem.entryReps.remove e.id))
             (spriteSystem.processEntry archive e)))
-            
+
     (FlxG.camera.calculateScrollBounds entryGroup SCROLL_BOUND_MARGIN))
 
 (method :Void displayMessage [:String message]
@@ -218,7 +218,7 @@
     (uiWindow.clearControls)
     (uiWindow.hide))
 
-(method :Void reportError [:String error] 
+(method :Void reportError [:String error]
     (print error)
     (uiWindow.makeText error FlxColor.RED)
     (uiWindow.show))
